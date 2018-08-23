@@ -32,7 +32,7 @@ class BookList extends React.Component {
 			   <div className="list-books-content">
 			   {shelves.map((shelf) => (
 	       	      <BookShelf key={shelf.id} books={shelf.books}
-			       title={shelf.title} updateBookshelf={this.props.updateBookShelf} />
+			       title={shelf.title} updateBookShelf={this.props.updateBookShelf} />
 			    ))}
 			   </div>
 			   <div className="open-search">
