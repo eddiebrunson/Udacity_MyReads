@@ -35,6 +35,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * React Fundamental course 
 * [Facebook's React Documentation](https://reactjs.org)
 * Slack channel discussions 
-* Fellow student project showcased on the slack channel(https://github.com/jgilless/myreads)
-* Medium article on setState(https://medium.freecodecamp.org/understanding-setstate-in-react-ea8982168b49)
+* [Fellow student project showcased on the slack channel](https://github.com/jgilless/myreads)
+* [Medium article on setState](https://medium.freecodecamp.org/understanding-setstate-in-react-ea8982168b49)
+
+
 
