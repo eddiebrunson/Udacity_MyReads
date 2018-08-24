@@ -19,7 +19,18 @@ class SearchPage extends React.Component {
     	books: []
     }
 
-    updateQuery = (query) => {
+  updateQuery = (query) => {
+    this.setState({ query: query, books: [] })
+    if (query){
+       BooksAPI.search(query).then((response) => {
+        if (query !== this.state.query) return;
+        if (Array.isArray(response)){
+          this.updateBooks(response)
+        }
+      })
+    }
+  }
+    /*updateQuery = (query) => {
     this.setState({ query: query, books: [] })
     if (query){
       BooksAPI.search(query, 50).then((response) => {
@@ -28,7 +39,7 @@ class SearchPage extends React.Component {
         }
       })
     }
-  }
+  } */
 
   updateBooks = (searchPage) => {
     let bookIdWithShelf = {}
